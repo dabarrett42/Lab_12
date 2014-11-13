@@ -54,14 +54,14 @@ int main()
    //DO THIS
    //display the height of the binary search tree (not minimum height)
    //display whether the binary search tree is balanced (should not be balanced)
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
    //create a minimum height binary search tree
    BinarySearchTree<CD>* min_bst = bst->minimize();
    bst_iter = min_bst->iterator();
