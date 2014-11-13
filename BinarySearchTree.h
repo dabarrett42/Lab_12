@@ -104,21 +104,40 @@ BinarySearchTree<T>* BinarySearchTree<T>::minimize()
    T** items = toArray();
    BinarySearchTree<T>* bst = new BinarySearchTree<T>(compare_items, compare_keys);
    //DO THIS
-
-
-
-
+	
+	bst->minimize(items, items[0], items[sze - 1]);
+	
 }
 
 template < class T >
 void BinarySearchTree<T>::minimize(T** items, int first, int last)
 {
    //DO THIS (recursive minimize method)
-
-
-
-
-
+	int mid = last-((first+last)/2);
+	//check for base case
+	
+	root = items[mid];
+	//(this)
+	/*
+	//recursive calls to insert the optimal elements
+	//as root's left child and root's right child
+	if() //left child
+	{
+		while(!items->isEmpty)
+		{
+		
+		}
+	}
+	else // right child
+	{
+		while(!items->isEmpty)
+		{
+		
+		}
+	}
+	*/
+	
+	
 }
 
 template < class T >
