@@ -116,8 +116,10 @@ void BinarySearchTree<T>::minimize(T** items, int first, int last)
 	int mid = last-((first+last)/2);
 	//check for base case
 	
+	
 	root = items[mid];
-	//(this)
+	this->insert(items[root]);
+	//minimize(items, mid, last)
 	/*
 	//recursive calls to insert the optimal elements
 	//as root's left child and root's right child
