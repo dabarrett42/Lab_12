@@ -118,7 +118,7 @@ void BinarySearchTree<T>::minimize(T** items, int first, int last)
 	
 	
 	root = items[mid];
-	this->insert(items[root]);
+	this->insert(root);
 	//minimize(items, mid, last)
 	/*
 	//recursive calls to insert the optimal elements
@@ -188,6 +188,7 @@ void BinarySearchTree<T>::minimizeComplete(T** items, int first, int last)
       if (first < last)
       {
          //initial log computations using mid
+		 //CHANGE THESE. THEY AREN"T SUPPOSED TO BE ZERO.
          double k_left = 0;                 //log base 2 of the number of items to the left of mid (including mid)
          double int_k_left = 0;               //same as above but rounded
          double k_right = 0;
