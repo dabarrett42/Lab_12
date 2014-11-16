@@ -54,25 +54,21 @@ int main()
    //DO THIS
    //display the height of the binary search tree (not minimum height)
    //display whether the binary search tree is balanced (should not be balanced)
-	int height = bst_iter->getHeight();
+	int height = bst->getHeight();
 	
 	/*Updated 11/13/14*/
 	//display height of the tree
 	cout << "The height of this tree is:" << height << endl;
 	
+	bool balanced = bst->isBalanced();
+	cout << balanced << endl;
+	
+	cout << "Tree balance status:";
 	//display whether the search tree is balanced
 	if(bst->isBalanced())
-		cout << "This tree is balanced" << endl;
-	else if(!bst->isBalanced())
-		cout << "Tree is unbalanced" << endl;
+		cout << "Balanced\n";
 	else
-		cout << "Stub Check. Rewrite code in BinarySearchTree.h" << endl;
-	
-	
-	
-	
-	
-	
+		cout << " Unbalanced\n";
 	
    //create a minimum height binary search tree
    BinarySearchTree<CD>* min_bst = bst->minimize();
@@ -90,15 +86,23 @@ int main()
    //DO THIS
    //display the height of the binary search tree (should be minimum height)
    //display whether the binary search tree is balanced (should be balanced)
-
-
-
-
-
-
-
-
-
+	
+	height = min_bst->getHeight();
+	
+	/*Updated 11/15/14*/
+	//display height of the tree
+	cout << "The height of this tree is:" << height << endl;
+	
+	balanced = min_bst->isBalanced();
+	cout << balanced << endl;
+	
+	cout << "Tree balance status:";
+	//display whether the search tree is balanced
+	if(min_bst->isBalanced())
+		cout << "Balanced\n";
+	else
+		cout << " Unbalanced\n";
+	
    //create a complete binary search tree
    BinarySearchTree<CD>* complete_bst = bst->minimizeComplete();
    delete bst;
@@ -116,14 +120,21 @@ int main()
    //DO THIS
    //display the height of the complete binary search tree (should be minimum height)
    //display whether the binary search tree is balanced (should be balanced)
-
-
-
-
-
-
-
-
+	height = complete_bst->getHeight();
+	
+	/*Updated 11/15/14*/
+	//display height of the tree
+	cout << "The height of this tree is:" << height << endl;
+	
+	balanced = complete_bst->isBalanced();
+	cout << balanced << endl;
+	
+	cout << "Tree balance status:";
+	//display whether the search tree is balanced
+	if(complete_bst->isBalanced())
+		cout << "Balanced\n";
+	else
+		cout << " Unbalanced\n";
 
    delete complete_bst;
 
